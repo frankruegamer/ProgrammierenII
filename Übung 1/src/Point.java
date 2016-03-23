@@ -1,45 +1,42 @@
-package exercise01;
-
-
 // Die nachfolgende Klasse soll einen Punkt in einem zweidimensionalen
 // Koordinatensystem repraesentieren.
 
 public class Point {
-	
+
+	private double x;
+	private double y;
+
 	// Konstruktor mit Uebergabe der x und y - Koordinate
 	Point(double x, double y)
 	{
-		// hier fehlt die Implementierung des Konstruktors
+		this.x = x;
+		this.y = y;
 	}
 	
 	// Auslesen der x-Koordinate
 	double getX()
 	{
-		// der folgende Rueckgabewert ist fehlerhaft
-		return 0; 
+		return x;
 	}
 	
 	// Auslesen der y-Koordinate
 	double getY()
 	{
-		// der folgende Rueckgabewert ist fehlerhaft
-		return 0; 
+		return y;
 	}
 	
 	// Abstand zu einem anderen Punkt
 	double distance(Point other)
 	{
-		// hier fehlt die Implementierung
-		// der Rueckgabewert ist natuerlich fehlerhaft
-		return 0;
+		return Math.sqrt(Math.pow(other.getX() - this.x, 2) + Math.pow(other.getY() - this.y, 2));
 	}
 	
 	// Erzeugung eines neuen Punktes, der zum Ausgangspunkt verschoben ist
 	Point moved(double deltaX, double deltaY)
 	{
-		//hier fehlt die Implementierung
-		// der Rueckgabewert ist ebenfalls fehlerhaft
-		return new Point(0.0, 0.0);
+		double newX = this.x + deltaX;
+		double newY = this.y + deltaY;
+		return new Point(newX, newY);
 	}
 
 	
