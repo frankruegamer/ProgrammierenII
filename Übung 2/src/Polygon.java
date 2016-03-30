@@ -1,5 +1,3 @@
-package exercise02;
-
 // Ein Polygon (Vieleck) ist eine gemetrische Figur, die man erhaelt, indem man
 // mindestens drei Eckpunkte in fester Reihenfolge durch Strecken miteinander 
 // verbindet, sodass eine zusammenhaengende Flaeche umschlossen wird.

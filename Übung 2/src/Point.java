@@ -1,7 +1,4 @@
-package exercise02;
-
-
-// Die nachfolgende Klasse repraesentiert einen Punkt in einem 
+// Die nachfolgende Klasse repraesentiert einen Punkt in einem
 // zweidimensionalen Koordinatensystem.
 
 public class Point {
