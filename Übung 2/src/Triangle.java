@@ -51,26 +51,15 @@ public class Triangle implements Polygon {
             System.out.println("Flächenberechnung fehlerhaft");
 
         t1.move(2, -2);
-        boolean b1 = t1.getP1().getX() == 2 && t1.getP1().getY() == -2;
-        boolean b2 = t1.getP2().getX() == 3 && t1.getP2().getY() == -2;
-        boolean b3 = t1.getP3().getX() == 2 && t1.getP3().getY() == -1;
+        Point p1 = t1.allVertexes()[0];
+        Point p2 = t1.allVertexes()[1];
+        Point p3 = t1.allVertexes()[2];
+        boolean b1 = p1.getX() == 2 && p1.getY() == -2;
+        boolean b2 = p2.getX() == 3 && p2.getY() == -2;
+        boolean b3 = p3.getX() == 2 && p3.getY() == -1;
         if (!(b1 && b2 && b3))
             System.out.println("Verschiebungsberechnung fehlerhaft");
 
         System.out.println("Testende");
     }
-
-    //region Getter
-    public Point getP1() {
-        return p1;
-    }
-
-    public Point getP2() {
-        return p2;
-    }
-
-    public Point getP3() {
-        return p3;
-    }
-    //endregion
 }
