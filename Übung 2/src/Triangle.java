@@ -12,7 +12,7 @@ public class Triangle implements Polygon {
     }
 
     public Point[] allVertexes() {
-        return new Point[]{p1, p2, p3};
+        return new Point[] {p1, p2, p3};
     }
 
     public double perimeter() {
