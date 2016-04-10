@@ -38,15 +38,11 @@ public class Triangle implements Polygon {
     public static void main(String[] args) {
         Triangle t1 = new Triangle(new Point(0, 0), new Point(1, 0), new Point(0,1));
         System.out.println("Start des Tests...");
-
         double perimeter = t1.perimeter();
         if (Math.abs(perimeter - 3.414213562373095) > 10E-8)
             System.out.println("Umfangsberechnung fehlerhaft");
-
-        double area = t1.area();
-        if (Math.abs(area - 0.5) > 0.1)
+        if (Math.abs(t1.area() - 0.5) > 0.1)
             System.out.println("Flächenberechnung fehlerhaft");
-
         t1.move(2, -2);
         Point p1 = t1.allVertexes()[0];
         Point p2 = t1.allVertexes()[1];
@@ -56,7 +52,6 @@ public class Triangle implements Polygon {
         boolean b3 = p3.getX() == 2 && p3.getY() == -1;
         if (!(b1 && b2 && b3))
             System.out.println("Verschiebungsberechnung fehlerhaft");
-
         System.out.println("Testende");
     }
 }
