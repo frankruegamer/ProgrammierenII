@@ -1,6 +1,3 @@
-/**
- * Created by Frank on 30.03.2016.
- */
 public class Triangle implements Polygon {
 
     private Point p1, p2, p3;
