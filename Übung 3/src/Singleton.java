@@ -16,9 +16,13 @@ public class Singleton {
 	// Hier fehlen der Konstruktor und die Methode getInstance
 	//
 
+	private Singleton() { }
 
-
-
+	public static Singleton getInstance() {
+		if (mySingleton == null)
+			mySingleton = new Singleton();
+		return mySingleton;
+	}
 
 	// *******************************************************************
 
