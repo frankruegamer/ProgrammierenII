@@ -28,7 +28,7 @@ public class Singleton {
 
 
 	// Mit Hilfe der nachfolgenden main-Methode koennen Sie ueberpruefen,
-	// ob Ihre Implementierung funktioniert. 
+	// ob Ihre Implementierung funktioniert.
 
 	// Hinweis: Anfangs kompiliert nachfolgener Code nicht.
 	// Sie muessen zunaechst die fehlenden Methoden implementieren!
