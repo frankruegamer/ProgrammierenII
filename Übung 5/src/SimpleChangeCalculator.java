@@ -1,5 +1,3 @@
-package exercise05;
-
 // Die nachfolgende Klasse beinhaltet einen sehr einfachen
 // Algorithmus zur Ermittlung des Wechselgelds: Es wird
 // der gesamte Betrag in 1-Cent-Muenzen ausgegeben.
