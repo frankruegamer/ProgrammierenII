@@ -8,7 +8,23 @@ public class EnhancedChangeCalculator extends SimpleChangeCalculator
 {
 	
 	// Hier fehlt Ihre Implementierung
-	
+
+	@Override
+	public int[] getChange(int euros, int cent) {
+		cent += euros * 100;
+		euros = 0;	// sicher ist sicher
+
+		int[] rueckgabe = new int[8];
+
+		for (int i = 7; i >= 0; i--) {
+			int value = Coin.availableCoins[i].getValue();
+			rueckgabe[i] = cent / value;
+			cent %= value;
+		}
+
+		return rueckgabe;
+	}
+
 	// Die nachfolgende main-Methode kann genutzt werden, um das
 	// Ergebnis zu ueberpruefen.
 	public static void main(String[] args)
