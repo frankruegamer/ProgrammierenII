@@ -10,7 +10,7 @@ public class NaviCon implements NaviConInterface {
     @Override
     public Point getCurrentPosition() throws InstantiationException, NullPointerException {
         if (geoManager == null)
-            throw new NullPointerException("NeoGeoManager");
+            throw new NullPointerException("NoGeoManager");
 
         try {
             return geoManager.currentLocation().moved(1, -1);
