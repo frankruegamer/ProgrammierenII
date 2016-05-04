@@ -1,6 +1,4 @@
-package exercise05b;
-
-// Die nachfolgende Klasse repraesentiert einen String. 
+// Die nachfolgende Klasse repraesentiert einen String.
 // Durch das Ueberschreiben der equals-Methode soll
 // erreicht werden, dass zwei Instanzen der Klasse
 // dann als gleich betrachtet werden, wenn sie sich
