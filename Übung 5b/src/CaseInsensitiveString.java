@@ -27,8 +27,15 @@ public class CaseInsensitiveString
 	
 // ***************************************************************************
 // Hier fehlt die Implementierung einer passenden equals-Methode
-	
-	
+
+	@Override
+	public boolean equals(Object o) {
+		boolean equal = false;
+		if (o instanceof CaseInsensitiveString) {
+			equal = s.equalsIgnoreCase(((CaseInsensitiveString) o).asString());
+		}
+		return equal;
+	}
 
 // ***************************************************************************
 
