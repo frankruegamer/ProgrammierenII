@@ -1,6 +1,4 @@
-package exercise06;
-
-// Instanzen dieser Klasse repraesentieren Materialbuchungssaetze. 
+// Instanzen dieser Klasse repraesentieren Materialbuchungssaetze.
 // Sie beschreiben im Detail, wieviel Material von wo nach wohin
 // bewegt werden soll.
 

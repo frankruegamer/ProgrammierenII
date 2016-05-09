@@ -1,5 +1,3 @@
-package exercise06;
-
 // Eine Abgabestelle fuer Material muss das nachfolgende Interface
 // GoodsSource (=Materialquelle) implementieren.
 

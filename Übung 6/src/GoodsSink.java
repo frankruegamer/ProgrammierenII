@@ -1,5 +1,3 @@
-package exercise06;
-
 // Eine Annahmestelle fuer Material muss das nachfolgende Interface
 // GoodsSink (=Materialsenke) implementieren.
 
