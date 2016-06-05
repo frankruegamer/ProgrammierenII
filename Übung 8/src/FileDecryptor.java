@@ -27,9 +27,7 @@ public class FileDecryptor {
         {
             System.out.println("Datei nicht gefunden");
         }
-        catch (IOException ignored)
-        {
-        }
+        catch (IOException ignored) { }
     }
 
     // Diese main-Methode zeigt die Verwednung der zu
