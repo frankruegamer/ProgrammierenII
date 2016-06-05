@@ -39,5 +39,4 @@ public class FileDecryptor {
     {
         decryptFile("Übung 8/src/data.crypt");
     }
-
 }
