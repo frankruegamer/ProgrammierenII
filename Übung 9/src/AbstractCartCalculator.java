@@ -1,5 +1,3 @@
-package exercise09;
-
 // Fuer die Nutzung von Streams ist das Einbinden des Package
 // java.io.* notwendig
 
