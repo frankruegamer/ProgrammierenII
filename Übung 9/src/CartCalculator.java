@@ -19,7 +19,8 @@ public class CartCalculator extends AbstractCartCalculator {
         {
             while (dis.available() > 0)
             {
-                int _artnr = dis.readInt();  // ignored
+                //noinspection unused
+                int _artnr = dis.readInt();
                 int anz = dis.readInt();
                 double price = dis.readDouble();
 
